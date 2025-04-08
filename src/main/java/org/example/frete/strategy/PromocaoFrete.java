@@ -1,4 +1,7 @@
 package org.example.frete.strategy;
 
-public class PromocaoFrete {
+import org.example.frete.domain.Entrega;
+
+public interface PromocaoFrete {
+    double aplicar(Entrega entrega, double valorFrete);
 }
